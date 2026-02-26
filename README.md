@@ -1,11 +1,29 @@
-# Python Flask app on Azure App Service Web
+Student API (Flask)
 
-This is a minimal sample app that demonstrates how to run a Python Flask application on Azure App Service Web.
+Simple Flask API for managing student data and predicting the 6th test score.
+Provides two endpoints:
 
-This repository can directly be deployed to Azure App Service.
+GET /Students → returns student data from students.json
 
-For more information, please see the [Python on App Service Quickstart docs](https://docs.microsoft.com/en-us/azure/app-service-web/app-service-web-get-started-python).
+GET /Predict?Scores=10 20 30 40 50 → returns predicted 6th score
 
-# Contributing
+✅ CORS enabled for development
+✅ Ready to deploy on Azure
 
-This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
+Tech Stack
+
+Python 3
+
+Flask + Flask-CORS
+
+NumPy
+
+Run
+pip install flask flask-cors numpy
+python app.py
+
+API will run at http://127.0.0.1:5000
+
+Author
+
+Tomáš Klein
